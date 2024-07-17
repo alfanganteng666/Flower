@@ -2,7 +2,7 @@ document
   .getElementById("loginForm")
   .addEventListener("submit", function (event) {
     event.preventDefault();
-    const username = document.getElementById("username").value;
+    const username = document.getElementById("username").value.toLowerCase();
     const errorMessage = document.getElementById("error-message");
 
     // Daftar username yang diperbolehkan
